@@ -11,11 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@emotion/react": "^11.4.1",
     "@mui/material": "^5.0.2",
     "@mui/styled-engine-sc": "^5.0.0",
     "@types/react": "^17.0.26",
     "@types/react-dom": "^17.0.9",
     "@types/react-router-dom": "^5.3.0",
+    "@types/styled-components": "^5.1.14",
     "html-webpack-plugin": "^5.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

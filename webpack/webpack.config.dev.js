@@ -12,10 +12,6 @@ const env = {
   DOMAIN: JSON.stringify("http://localhost:3000"),
 };
 
-//  環境変数
-const { ProcessEnvironment } = require("../config/scripts/environment");
-const processEnvironment = new ProcessEnvironment();
-
 const config = merge(baseConfig, {
   mode: "development",
   devServer: {
@@ -28,7 +24,11 @@ const config = merge(baseConfig, {
   plugins: [
     /** 環境変数の追加 */
     new webpack.DefinePlugin({
-      "process.env": processEnvironment.toJson(),
+      process: {
+        env: {
+          NODE_ENV: JSON.stringify("development"),
+        },
+      },
     }),
   ],
 });
