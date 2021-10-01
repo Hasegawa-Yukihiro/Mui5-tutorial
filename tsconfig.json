@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "es2020",
+    "lib": ["es2020", "dom"],
+    "module": "es2020",
+    "strict": true,
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "moduleResolution": "node",
+    "jsx": "react"
+  },
+
+  // コンパイルする対象ファイルを記述する。
+  "include": ["./src/**/*", "src/views/Providers/Theme/Color/Palette/.d.ts"],
+
+  // コンパイルする対象から外すファイルを記述する。
+  "exclude": ["node_modules", "dist/**/*"]
+}
